@@ -1,0 +1,80 @@
+/* reset */
+* {margin:0; padding:0}
+html,body {width:100%; height:100%}
+html {overflow-y:scroll}
+body,h1,h3,h4,input,button {font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;}
+body {line-height:1.5em; background-color: #f2f2f2;}
+img,fieldset,iframe {border:0 none}
+li {list-style:none}
+button {font-family: 'Josefin Sans', Helvetica, Arial, sans-serif; font-size:14px; font-weight: 600; color:#fff; vertical-align:middle; outline:0;}
+button a {color:#fff;}
+button a:hover {color:#fff;}
+img {vertical-align:middle;}
+em,address {font-style:normal}
+label,button {cursor:pointer}
+a {color:#444; text-decoration:none; outline:0;}
+a:hover {color:#f26522; text-decoration:none;}
+hr {display:none}
+table { border-collapse: collapse; width: 100%; border: 0; cellpadding: 0; cellspacing: 0;}
+th {text-align:center}
+caption {visibility:hidden; overflow:hidden; width:1px; height:1px; font-size:0; line-height:0}
+
+.mt10 {margin-top: 10px;}
+.mt20 {margin-top: 20px;}
+.mt30 {margin-top: 30px;}
+.mt50 {margin-top: 50px;}
+.mr5 {margin-right: 5px;}
+.mr15 {margin-right:15px;}
+
+.mb10 {margin-bottom: 10px;}
+.mb20 {margin-bottom: 20px;}
+.mb50 {margin-bottom: 50px;}
+
+.pl10 {padding-left: 10px;}
+.pr10 {padding-right: 10px;}
+
+/* common */
+.clear {clear:both}
+.blind,legend {display:block; overflow:hidden; position:absolute; top:-1000em; left:0}
+:root legend {margin-top:-1px; font-size:0; line-height:0}
+
+table {width:922px; height:40px; border-top: 2px solid #2e3192; margin-top: 10px;}
+table th {font-size: 18px; color: #333; text-align: left; font-weight:600; background-image: url(../images/table-bg.gif);}
+table th, td {border: 1px solid #d0d0d0; padding: 8px 0 6px 10px;}
+th .uparrow-on {float: right; margin-right: 10px;}
+th .arrows-off {float: right; margin-right: 10px;}
+
+input[type=text], input[type=tel], input[type=email], select, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;}
+label { padding: 25px 12px 0 0; display: inline-block;}
+input[type=submit], input[type=button] { background-color: #2e3192; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;}
+input[type=submit]:hover, input[type=button]:hover {background-color: #272a80;}
+table input[type=button] { width: 100px; padding-left:0; padding-right:0; margin-right:10px; margin-bottom:5px;}
+
+
+.row:after {content: ""; display: table; clear: both;}
+.container { border-radius: 5px; background-color: #f2f2f2; padding: 20px; }
+
+.col-11 { width: 11%; margin-top: 6px; }
+.col-45 { width: 45%; margin-top: 6px; }
+.col-48 { float: right; width: 48%; margin-top: 6px; }
+.col-20 { float: left; width: 20%; margin-top: 6px; }
+.col-25 { float: left; width: 25%; margin-top: 6px; }
+.col-72 { float: left; width: 72%; margin-top: 6px; }
+.col-75 { float: left; width: 75%; margin-top: 6px; }
+.verify_btn { float: left; width: 104%; margin-top: 6px; }
+.clearfix {width:100%}
+.clearfix:after {content:""; clear:both; display:block;}
+
+/* header */
+
+/* nav */
+#nav {margin-top:15px; font-size:14px; font-style: normal; font-variant: normal; font-weight: 600; color:#333;}
+#nav ul {display: flex; justify-content: space-between;  align-items: center; width:1200px;}
+
+
+
+
+#container .inner .sub-bg {position: relative; }
+#container .inner .sub-bg h1 {position: absolute; top:75px; left:520px; font-size: 40px; font-style: normal; font-variant: normal; font-weight: 600; color: #fff;}
+
+

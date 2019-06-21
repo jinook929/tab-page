@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HostTel</title>
+    <link rel="stylesheet" type="text/css" href="../css/general.css" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- header -->
+    <section id="header">
+        <div class="inner">
+            <!-- nav -->
+            <div id="nav">
+                <ul>
+                    <li><a href="#" id="first-nav"><img src="../images/logo.png" alt="HostTel" /></a></li>
+                    <li><a href="#">MEMBERS</a></li>
+                    <li><a href="#">SOLUTIONS</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">NETWORK COVERAGE</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">SIGNUP</a></li>
+                    <li><a href="#">LOGOUT</a></li>
+                </ul>
+            </div>
+            <!-- nav end -->
+        </div>
+    </section>
+    <!-- header end -->
+
+    <!-- contents -->
+    <section id="container">
+
+        <div class="inner">
+            <div class="sub-bg">
+                <h1>WELCOME</h1>
+                <img src="../images/inner-sub-bg.jpg" alt="">
+            </div>
+
+            <div id="content">
+                <!-- Account Info -->
+                <div class="account">
+                    <a href=""><img src="../images/p1.png" alt=""><span class="mr15"> Company</span></a>
+                    <a href=""><img src="../images/p2.png" alt=""><span> Mitsuko Federico</span></a>
+                </div>
+
+                <!-- Tabs -->
+                <div class="tab2">
+                    <button class="tablinks active" onclick="selectTab(event, 'HOME')">HOME</button>
+                    <button class="tablinks" onclick="selectTab(event, 'EXTENSIONS')">EXTENSIONS</button>
+                    <button class="tablinks" onclick="selectTab(event, 'PHONEBOOK')">PHONEBOOK</button>
+                    <button class="tablinks" onclick="selectTab(event, 'DIVERSIONS')">DIVERSIONS</button>
+                    <button class="tablinks" onclick="selectTab(event, 'SPEED')">SPEED DIAL</button>
+                    <button class="tablinks" onclick="selectTab(event, 'NUMBERS')">NUMBERS</button>
+                </div>
+
+                <!-- Tab 1. Home -->
+                <article id="HOME" class="tabcontent" style="display: block">
+                    <h2>HOME</h2>
+                    <div class="mem_table mt20">
+                        <table class="inner_table mb10">
+                            <caption>Customer</caption>
+                            <colgroup>
+                                <col width="155" />
+                                <col width="*" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">Customer</th>
+                                </tr>
+                                <tr>
+                                    <td>Company Name</td>
+                                    <td>HostTel Demo</td>
+                                </tr>
+                                <tr>
+                                    <td>Primary Contact</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Phone Number</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile Number</td>
+                                    <td class="red">Empty</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td class="red">Empty</td>
+                                </tr>
+                                <tr>
+                                    <td>Credit</td>
+                                    <td>$0</td>
+                                </tr>
+                                <tr>
+                                    <td>Call Spend <br>(last 30 days)</td>
+                                    <td>$0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="inner_table">
+                            <caption>User</caption>
+                            <colgroup>
+                                <col width="155" />
+                                <col width="*" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">User</th>
+                                </tr>
+                                <tr>
+                                    <td>Authenticated User</td>
+                                    <td>Mitsuko Federico</td>
+                                </tr>
+                                <tr>
+                                    <td>Internal CLI</td>
+                                    <td>101</td>
+                                </tr>
+                                <tr>
+                                    <td>Outbound CLI</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Permissions</td>
+                                    <td>
+                                        <ul id="mem_pt">
+                                            <li>extensions</li>
+                                            <li>phonebook</li>
+                                            <li>diversions</li>
+                                            <li>numbers</li>
+                                            <li>home</li>
+                                            <li>speeddial</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- Tab 2. EXTENSIONS -->
+                <article id="EXTENSIONS" class="tabcontent">
+                    <h2>EXTENSIONS</h2>
+                    <div class="search">
+                        <form action="" method="">
+                            <input name="keyword" type="text" class="keyword" placeholder="Search" id="search-box">
+                            <input type="image" src="../images/btn-search.png" alt="search" id="search-btn">
+                        </form>
+                    </div>
+                    <!-- table -->
+                    <table class="members-table">
+                        <caption>Extensions</caption>
+                        <colgroup>
+                            <col width="*" />
+                            <col width="190" />
+                            <col width="190" />
+                            <col width="120" />
+                            <col width="190" />
+                            <col width="135" />
+                        </colgroup>
+                        <tr>
+                            <th>Ext <img src="../images/up-on.gif" alt="" class="uparrow-on"></th>
+                            <th>Caller ID<img src="../images/arrow-off.gif" alt="" class="arrows-off"></th>
+                            <th>Outbound CLI<img src="../images/arrow-off.gif" alt="" class="arrows-off"></th>
+                            <th>Silent<img src="../images/arrow-off.gif" alt="" class="arrows-off"></th>
+                            <th>Phone Type<img src="../images/arrow-off.gif" alt="" class="arrows-off"></th>
+                            <th>Dial</th>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>Mitsuko Federico</td>
+                            <td></td>
+                            <td>No</td>
+                            <td></td>
+                            <td><img src="../images/dial-btn.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Mitsuko Federico</td>
+                            <td></td>
+                            <td>No</td>
+                            <td></td>
+                            <td><img src="../images/dial-btn.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>Mitsuko Federico</td>
+                            <td></td>
+                            <td>No</td>
+                            <td></td>
+                            <td><img src="../images/dial-btn.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>104</td>
+                            <td>Mitsuko Federico</td>
+                            <td></td>
+                            <td>No</td>
+                            <td></td>
+                            <td><img src="../images/dial-btn.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>105</td>
+                            <td>Mitsuko Federico</td>
+                            <td></td>
+                            <td>No</td>
+                            <td></td>
+                            <td><img src="../images/dial-btn.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>106</td>
+                            <td>Mitsuko Federico</td>
+                            <td></td>
+                            <td>No</td>
+                            <td></td>
+                            <td><img src="../images/dial-btn.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>107</td>
+                            <td>Mitsuko Federico</td>
+                            <td></td>
+                            <td>No</td>
+                            <td></td>
+                            <td><img src="../images/dial-btn.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>108</td>
+                            <td>Mitsuko Federico</td>
+                            <td></td>
+                            <td>No</td>
+                            <td></td>
+                            <td><img src="../images/dial-btn.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>109</td>
+                            <td>Mitsuko Federico</td>
+                            <td></td>
+                            <td>No</td>
+                            <td></td>
+                            <td><img src="../images/dial-btn.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>110</td>
+                            <td>Mitsuko Federico</td>
+                            <td></td>
+                            <td>No</td>
+                            <td></td>
+                            <td><img src="../images/dial-btn.png" alt=""></td>
+                        </tr>
+                    </table>
+                    <!-- table end -->
+                    <!-- paginate_text 
+                        <p class="paginate_text">Showing 1 to 1 of 1 rows</p> -->
+                    <!-- paginate -->
+                    <div class="paginate">
+                        <div class="pagelist">
+                            <a href="#" class="btn_pre_end"><img src="../images/btn_pre_end.gif" alt="start" /></a>
+                            <a href="#" class="btn_pre"><img src="../images/btn_pre.gif" alt="pre" /></a>
+                            <a href="#"><span class="paging">1</span></a>
+                            <a href="#"><span>2</span></a>
+                            <a href="#"><span>3</span></a>
+                            <a href="#"><span>4</span></a>
+                            <a href="#"><span>5</span></a>
+                            <a href="#"><span>6</span></a>
+                            <a href="#"><span>7</span></a>
+                            <a href="#"><span>8</span></a>
+                            <a href="#"><span>9</span></a>
+                            <a href="#"><span>10</span></a>
+                            <a href="#" class="btn_next"><img src="../images/btn_next.gif" alt="next" /></a>
+                            <a href="#" class="btn_next_end"><img src="../images/btn_next_end.gif" alt="end" /></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tab 3. PHONEBOOK -->
+                <article id="PHONEBOOK" class="tabcontent">
+                    <h2>Phonebook</h2>
+                    <div class="mem_table mt20">
+                        <div class="mem_left">
+                            <div class="top_info">
+                                <h3><img src="../images/bullet2.gif" alt="Site Contact"> Personal</h3>
+                                <div class="search2">
+                                    <form action="" method="">
+                                        <input name="keyword" type="text" class="keyword" placeholder="Search"
+                                            id="search-box">
+                                        <input type="image" src="../images/btn-search.png" alt="search" id="search-btn">
+                                    </form>
+                                </div>
+                            </div>
+                            <table class="inner_table mb10">
+                                <caption>Personal</caption>
+                                <colgroup>
+                                    <col width="150" />
+                                    <col width="150" />
+                                    <col width="*" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>Name<img src="../images/up-on.gif" alt="" class="uparrow-on"></th>
+                                        <th>Number</th>
+                                        <th>Dial</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Personal Contact</td>
+                                        <td>0892219999</td>
+                                        <td><img src="../images/dial-btn.png" alt=""></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Showing 1 to 1 of 1 rows</p>
+                        </div>
+                        <div class="mem_right">
+                            <div class="top_info">
+                                <h3 class="mt20"><img src="../images/bullet2.gif" alt="Site Contact"> Company</h3>
+                                <div class="search2">
+                                    <form action="" method="">
+                                        <input name="keyword" type="text" class="keyword" placeholder="Search"
+                                            id="search-box">
+                                        <input type="image" src="../images/btn-search.png" alt="search" id="search-btn">
+                                    </form>
+                                </div>
+                            </div>
+                            <table class="inner_table mb10">
+                                <caption>Company</caption>
+                                <colgroup>
+                                    <col width="150" />
+                                    <col width="150" />
+                                    <col width="*" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>Name<img src="../images/up-on.gif" alt="" class="uparrow-on"></th>
+                                        <th>Number</th>
+                                        <th>Dial</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Candance Pippen</td>
+                                        <td>98765432</td>
+                                        <td><img src="../images/dial-btn.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Whitney Lawhon</td>
+                                        <td>0412345678</td>
+                                        <td><img src="../images/dial-btn.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Willette Tisdale</td>
+                                        <td>999</td>
+                                        <td><img src="../images/dial-btn.png" alt=""></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Showing 1 to 3 of 3 rows</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tab 4. DIVERSIONS -->
+                <article id="DIVERSIONS" class="tabcontent">
+                    <h2>DIVERSIONS</h2>
+                    <div class="search">
+                        <form action="" method="">
+                            <input name="keyword" type="text" class="keyword" placeholder="Search" id="search-box">
+                            <input type="image" src="../images/btn-search.png" alt="search" id="search-btn">
+                        </form>
+                    </div>
+                    <!-- table -->
+                    <table class="members-table">
+                        <caption>DIVERSIONS</caption>
+                        <colgroup>
+                            <col width="*" />
+                            <col width="190" />
+                            <col width="190" />
+                            <col width="120" />
+                            <col width="190" />
+                        </colgroup>
+                        <tr>
+                            <th>Number<img src="../images/up-on.gif" alt="" class="uparrow-on"></th>
+                            <th>Destination<img src="../images/arrow-off.gif" alt="" class="arrows-off"></th>
+                            <th>Label<img src="../images/arrow-off.gif" alt="" class="arrows-off"></th>
+                            <th>Enabled<img src="../images/arrow-off.gif" alt="" class="arrows-off"></th>
+                            <th>Dial<img src="../images/arrow-off.gif" alt="" class="arrows-off"></th>
+                        </tr>
+                        <tr>
+                            <td>12301</td>
+                            <td>-</td>
+                            <td></td>
+                            <td>No</td>
+                            <td><img src="../images/dial-btn.png" alt=""></td>
+                        </tr>
+                    </table>
+                    <!-- table end -->
+                    <!-- paginate_text 
+                        <p class="paginate_text">Showing 1 to 1 of 1 rows</p> -->
+                    <!-- paginate -->
+                    <div class="paginate">
+                        <div class="pagelist">
+                            <a href="#" class="btn_pre_end"><img src="../images/btn_pre_end.gif" alt="start" /></a>
+                            <a href="#" class="btn_pre"><img src="../images/btn_pre.gif" alt="pre" /></a>
+                            <a href="#"><span class="paging">1</span></a>
+                            <a href="#"><span>2</span></a>
+                            <a href="#"><span>3</span></a>
+                            <a href="#"><span>4</span></a>
+                            <a href="#"><span>5</span></a>
+                            <a href="#"><span>6</span></a>
+                            <a href="#"><span>7</span></a>
+                            <a href="#"><span>8</span></a>
+                            <a href="#"><span>9</span></a>
+                            <a href="#"><span>10</span></a>
+                            <a href="#" class="btn_next"><img src="../images/btn_next.gif" alt="next" /></a>
+                            <a href="#" class="btn_next_end"><img src="../images/btn_next_end.gif" alt="end" /></a>
+                        </div>
+                    </div>
+                    <!-- paginate end-->
+                </article>
+
+                <!-- Tab 5. SPEED DIAL -->
+                <article id="SPEED" class="tabcontent">
+                    <h2>SPEED DIAL</h2>
+                    <div class="search">
+                        <form action="" method="">
+                            <input name="keyword" type="text" class="keyword" placeholder="Search" id="search-box">
+                            <input type="image" src="../images/btn-search.png" alt="search" id="search-btn">
+                        </form>
+                    </div>
+                    <!-- table -->
+                    <table class="members-table">
+                        <caption>SPEED DIAL</caption>
+                        <colgroup>
+                            <col width="*" />
+                            <col width="200" />
+                            <col width="200" />
+                            <col width="200" />
+                        </colgroup>
+                        <tr>
+                            <th>Number<img src="../images/up-on.gif" alt="" class="uparrow-on"></th>
+                            <th>Destination<img src="../images/arrow-off.gif" alt="" class="arrows-off"></th>
+                            <th>Name<img src="../images/arrow-off.gif" alt="" class="arrows-off"></th>
+                            <th>Dial</th>
+                        </tr>
+                        <tr>
+                            <td>999</td>
+                            <td>999</td>
+                            <td></td>
+                            <td><img src="../images/dial-btn.png" alt=""></td>
+                        </tr>
+                    </table>
+                    <!-- table end -->
+                    <!-- paginate_text 
+                        <p class="paginate_text">Showing 1 to 1 of 1 rows</p> -->
+                    <!-- paginate -->
+                    <div class="paginate">
+                        <div class="pagelist">
+                            <a href="#" class="btn_pre_end"><img src="../images/btn_pre_end.gif" alt="start" /></a>
+                            <a href="#" class="btn_pre"><img src="../images/btn_pre.gif" alt="pre" /></a>
+                            <a href="#"><span class="paging">1</span></a>
+                            <a href="#"><span>2</span></a>
+                            <a href="#"><span>3</span></a>
+                            <a href="#"><span>4</span></a>
+                            <a href="#"><span>5</span></a>
+                            <a href="#"><span>6</span></a>
+                            <a href="#"><span>7</span></a>
+                            <a href="#"><span>8</span></a>
+                            <a href="#"><span>9</span></a>
+                            <a href="#"><span>10</span></a>
+                            <a href="#" class="btn_next"><img src="../images/btn_next.gif" alt="next" /></a>
+                            <a href="#" class="btn_next_end"><img src="../images/btn_next_end.gif" alt="end" /></a>
+                        </div>
+                    </div>
+                    <!-- paginate end-->
+                </article>
+
+                <!-- Tab 6. NUMBERS -->
+                <article id="NUMBERS" class="tabcontent">
+                    <h2>NUMBERS</h2>
+                    <div class="search">
+                        <form action="" method="">
+                            <input name="keyword" type="text" class="keyword" placeholder="Search" id="search-box">
+                            <input type="image" src="../images/btn-search.png" alt="search" id="search-btn">
+                        </form>
+                    </div>
+                    <!-- table -->
+                    <table class="members-table">
+                        <caption>NUMBERS</caption>
+                        <colgroup>
+                            <col width="*" />
+                            <col width="250" />
+                            <col width="250" />
+                            <col width="200" />
+                        </colgroup>
+                        <tr>
+                            <th>Number<img src="../images/up-on.gif" alt="" class="uparrow-on"></th>
+                            <th>Dialplan<img src="../images/arrow-off.gif" alt="" class="arrows-off"></th>
+                            <th>Calls Received<img src="../images/arrow-off.gif" alt="" class="arrows-off"></th>
+                            <th>Dial</th>
+                        </tr>
+                        <tr>
+                            <td>0892001865</td>
+                            <td>Go to testservice</td>
+                            <td>0</td>
+                            <td><img src="../images/dial-btn.png" alt=""></td>
+                        </tr>
+                    </table>
+                    <!-- table end -->
+                    <!-- paginate_text 
+                        <p class="paginate_text">Showing 1 to 1 of 1 rows</p> -->
+                    <!-- paginate -->
+                    <div class="paginate">
+                        <div class="pagelist">
+                            <a href="#" class="btn_pre_end"><img src="../images/btn_pre_end.gif" alt="start" /></a>
+                            <a href="#" class="btn_pre"><img src="../images/btn_pre.gif" alt="pre" /></a>
+                            <a href="#"><span class="paging">1</span></a>
+                            <a href="#"><span>2</span></a>
+                            <a href="#"><span>3</span></a>
+                            <a href="#"><span>4</span></a>
+                            <a href="#"><span>5</span></a>
+                            <a href="#"><span>6</span></a>
+                            <a href="#"><span>7</span></a>
+                            <a href="#"><span>8</span></a>
+                            <a href="#"><span>9</span></a>
+                            <a href="#"><span>10</span></a>
+                            <a href="#" class="btn_next"><img src="../images/btn_next.gif" alt="next" /></a>
+                            <a href="#" class="btn_next_end"><img src="../images/btn_next_end.gif" alt="end" /></a>
+                        </div>
+                    </div>
+                    <!-- paginate end-->
+                </article>
+
+            </div>
+        </div>
+    </section><!-- section end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="inner">
+            <p>Copyright © HostTel. All Rights Reserved</p>
+            <p class="end">TEL : + 61. 8. 9221. 9999 FAX : + 61. 7. 3337. 9977 &nbsp;&nbsp;National Activation Centre
+                Email : nac@hosttel.com.au</p>
+        </div>
+    </footer>
+    <!-- footer end-->
+
+    <script src="../js/tab.js"></script>
+</body>
+
+</html>

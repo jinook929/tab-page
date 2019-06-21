@@ -1,0 +1,132 @@
+#content .account {display: flex; justify-content: flex-end; align-items: center; margin-bottom:20px;}
+#content .account img {margin-right:10px;}
+#content .account span {font-size: 18px; color: #333; font-weight: 600;}
+
+.tab {display: grid; grid-gap: 5px; grid-template-columns: repeat(8, 1fr); justify-items: end;}
+.tab button {  cursor:default; background: #f26522;  font-size:13px; padding-top: 15px; padding-bottom: 12px; border: none; border-top-left-radius: 10px; border-top-right-radius: 10px; outline: none;}
+.tab button.active { color: #333;  font-size:13px; background-color: #fff;}
+.tablinks { width: 100%;}
+.tabcontent { display: none; padding: 6px 12px; border: 1px solid #ccc; border-top: none;}
+
+#content article {font-size:18px; color:#444; padding: 40px 136px 36px; font-size:16px;}
+#content article h2 { text-align: center; color:#2e3192; font-size:24px; font-style: normal; text-transform: uppercase; font-weight: 600;}
+#content article p { font-weight: 400; color:#777; padding-top: 20px; text-align: center; font-size:18px;}
+#content article p strong{ font-weight: 600; color: #333;}
+#content article ul { padding-top:50px; margin-left: 16px;}
+#content article ul li { margin-bottom:20px; list-style-image: url('../images/bullet.gif');}
+#content article input { margin-top:20px; margin-top:20px;}
+#content article button { background-color: #f26522; padding:15px 30px 11px 30px; margin-top:20px; border:none; border-radius: 5px;}
+#content article button:hover { background-color: #f25308;}
+#content article button:hover a { color:#fff;}
+#content article .both_btn button{ margin-top: 50px; width:130px; padding:15px 0 11px ;}
+
+#content article .both_btn button{ margin-top: 50px;}
+#content article .both_btn button img{ margin-bottom:5px;}
+#content article button img{ margin-bottom:5px;}
+
+
+.application-form  {margin: 20px 0;}
+.radio-input { display: none;}
+.radio-button {height: 14px; width: 14px; border: 1px solid #666;border-radius: 50%; display: inline-block; position: relative; left: 0; top: 1.2px; margin-right: 10px;}
+.radio-button:after { content: ""; display: block; height: 8px; width: 8px; border: 5px solid #2e3192; border-radius: 50%; position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0; transition: opacity .2s;}
+.radio-input:checked + label>span:after {  opacity: 1;}
+
+/* Company Details */
+
+fieldset {font-size:18px; color:#444; padding: 40px 136px 36px; font-size:16px;}
+fieldset h2 { text-align: center; color:#2e3192; font-size:24px; font-style: normal; text-transform: uppercase; font-weight: 600;}
+fieldset h3 img { padding-bottom: 6px;}
+fieldset p { font-weight: 400; color:#777; font-size:16px}
+
+fieldset input { margin-top:20px;}
+fieldset select { font-size:14px; padding:0 20px; height:38px; margin-top:20px; margin-right:10px;}
+fieldset button { background-color: #f26522; padding:15px 30px 11px 30px; margin-top:20px; border:none; border-radius: 5px;}
+fieldset button:hover { background-color: #f25308;}
+fieldset button:hover a { color:#fff;}
+fieldset legend { padding-top:20px; font-weight: 600; color: #333;}
+#content fieldset .both_btn button{ margin-top: 50px; width:130px; padding:15px 0 11px ;}
+#content fieldset .both_btn button img{ margin-bottom:5px;}
+#content fieldset .add_btn {background-color: #2e3192;}
+#content fieldset .add_btn:hover {background-color: #272a80;}
+
+/* Extension */
+
+.signup_table th { background-image: url(../images/table-bg2.gif); text-align: center; padding-left: 0;}
+.signup_table td { text-align: center; padding: 8px 10px 6px;}
+.signup_table td a { display: inline-block;}
+.signup_table td a:hover { color:#f26522;}
+#content article .extension_btn {background-color: #2e3192;}
+#content article .extension_btn:hover {background-color: #272a80;}
+.blue_btn button {background-color: #2e3192;}
+.blue_btn button:hover {background-color: #272a80;}
+
+/* porting */
+#newnumform  { margin: 50px 0;}
+#newnumform  input { width: 70%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; resize: vertical; text-align: right;}
+#newnumform  .infobox { font-size: 16px; text-align: left; margin-top:20px;}
+
+#porting_form { margin-top: 50px;}
+#porting_form input[type=text], select { font-size:14px;}
+.porting_table {border-top:solid 1px #d0d0d0; width: 930px; background:#f5f4f4;}
+
+
+/* Dial Plan */
+.wrapper {width: 95%;}
+.actn {text-align: center;}
+.actn_left {text-align: left;}
+
+.box textarea {  width:100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; resize: vertical; box-sizing: border-box; font-size:14px; color:#555;}
+.box h4 {  padding: 8px 15px 6px;  border:1px solid rgb(201, 199, 199); border-bottom:0; font-weight: 400;  background-color: #e9e7e7; }
+.box h4 img {padding-bottom:4px; padding-right:10px;}
+
+.handle { padding: 8px 15px 6px;  border:1px solid rgb(201, 199, 199); font-weight: 400;  background-color: #e9e7e7; }
+.handle img { padding-bottom:4px; padding-right:10px;}
+.handle2 img { padding-bottom:4px; padding-right:10px;}
+.handle2 { padding: 0 15px 6px;  border:1px solid rgb(201, 199, 199); font-weight: 400;  background-color: #e9e7e7; text-align: left;}
+.handle2 input { width:3%; font-size:14px; text-align: center; margin-top:6px;}
+
+.lineitem { border:1px solid rgb(201, 199, 199); margin-top:10px; padding: 8px 0 5px;}
+.draghelper { border:1px solid rgb(201, 199, 199); padding:10px 15px 50px;}
+
+.dialplan_container { display: grid; grid-gap: 5px; grid-template-columns: repeat(12, 1fr); }
+#general, #officehr, #afterhr, #emergency { grid-column: 1/11; }
+#menu { grid-column: 11/13; grid-row: 2/4; text-align: center;}
+.footer { text-align: center;}
+.footer input { width: 90%; margin-left:0;}
+.right_sel {float:right;}
+.section2 { border:1px solid rgb(201, 199, 199); margin: 50px 0 0; font-size:14px;}
+.section2 h4 { border-bottom:1px solid rgb(201, 199, 199); padding-top:5px; background-color: #e9e7e7;}
+.section2 p { padding: 10px 5px;}
+
+/* Network */
+
+.hardwaretbl { text-align: center; }
+.hardwaretbl th { text-align: center;}
+.s-text { font-size: 14px;}
+
+/* Billing */
+
+.row label{ padding-top:10px; font-weight:700;}
+.row input[type=tel] { width: 70%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;}
+.card_info { display: flex;}
+.card_info img { margin-right: 10px; height:40px;}
+#ddmethod table {border-top: 1px solid #d0d0d0;}
+.ccicon { float:left; height:54px; width:64px; background-position:0px -10px;}
+
+.outer_table {width:922px; height:40px; margin-top: 10px; border-left: 1px solid #d0d0d0; border-right: 1px solid #d0d0d0; border-bottom: 1px solid #d0d0d0;}
+.outer_table2, .outer_table3 {width:922px; height:40px; margin-top: 30px; border-left: 1px solid #d0d0d0; border-right: 1px solid #d0d0d0; border-bottom: 1px solid #d0d0d0;}
+.outer_table th, .outer_table2 th, .outer_table3 th {text-align: center;}
+.outer_table td, .outer_table2 td { padding-left:15px; border:none;}
+.outer_table3 td { text-align: center;}
+.inner_table { width:430px; border-top: 1px solid #d0d0d0;}
+.inner_table th { background-image: none; background-color: #f8f6f6; border: 1px solid #d0d0d0;}
+.inner_table td { border: 1px solid #d0d0d0;}
+.inner_table2 { width:430px; border: 1px solid #d0d0d0;}
+.inner_table2 th { background-image: none; background-color: #f8f6f6; border: 1px solid #d0d0d0; text-align: center; padding:5px; height:50px;}
+.inner_table2 td { border: 1px solid #d0d0d0; text-align: center; padding:5px;}
+
+/* Footer */
+
+footer { font-size: 12px; color: #555;}
+footer .inner {display: grid; grid-template-columns: repeat(2, 1fr); margin-top:24px;}
+footer .inner .end {justify-self: end;}
